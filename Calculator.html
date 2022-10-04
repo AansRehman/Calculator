@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1> Calculator </h1>
+    <div class= "xyz">
+    <form name = "form1">
+	
+    <input id = "screen" type ="text"> <br> <br>
+    <button type = "button" class="button" onclick="form1.screen.value += '7'">7</button>
+    <button type = "button" class="button" onclick="form1.screen.value += '8'">8</button>
+    <button type = "button" class="button" onclick="form1.screen.value += '9'">9</button>
+    <button type = "button" class="button" id="clear" onclick="form1.screen.value = ''">C</button>
+    <br> 
+    <button type = "button" class="button" onclick="form1.screen.value += '4'">4</button>
+    <button type = "button" class="button" onclick="form1.screen.value += '5'">5</button>
+    <button type = "button" class="button" onclick="form1.screen.value += '6'">6</button>
+    <button type = "button" class="button" id="prob" onclick="form1.screen.value += 'P'">nPr</button>
+    <br> 
+
+    <button type = "button" class="button" onclick="form1.screen.value += '1'">1</button>
+    <button type = "button" class="button" onclick="form1.screen.value += '2'">2</button>
+    <button type = "button" class="button" onclick="form1.screen.value += '3'">3</button>
+    <button type = "button" class="button" id="prob" onclick="form1.screen.value += 'C'">nCr</button>
+    <br> 
+    <button type = "button" class="button" onclick="form1.screen.value += '0'">0</button>
+    <button type = "button" class="button" id="symbol" onclick="form1.screen.value += 'x'">x</button>
+    <button type = "button" class="button" id="symbol" onclick="form1.screen.value += '/'">/</button>
+    <button type = "button" class="button" id="symbol" onclick="form1.screen.value += '%'">%</button>
+    <br>  
+    <button type = "button" class="button" id="symbol" onclick="form1.screen.value += '!'">!</button>
+    <button type = "button" class="button" id="symbol" onclick="form1.screen.value += '+'">+</button>
+    <button type = "button" class="button" id="symbol" onclick="form1.screen.value += '-'">-</button>
+    <button type = "button" class="button" id="result"  onclick="calculate(form1.screen.value)">=</button>
+    <br> 
+    </form>
+    </div>
+    <script type = "text/JavaScript" src="Calculator.js"></script>
+
+</body>
+</html>
