@@ -5,7 +5,7 @@ let screen = document.getElementById('screen');
 var buttons = document.querySelectorAll('button');
 var screenValue  = '';
 var result = "";
-
+var defaultvalue = "some default value"
 
 function calculate(exp)
 {
